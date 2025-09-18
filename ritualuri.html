@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare</title>
+  <meta name="description" content="BeautyVilla by Ast oferă o gamă largă de servicii de înfrumusețare și relaxare, inclusiv machiaj, coafură, tratamente faciale și masaj. Descoperă experiența de lux!">
+  <meta name="keywords" content="BeautyVilla, Asta, înfrumusețare, relaxare, machiaj, coafură, tratamente faciale, masaj, saloane de înfrumusețare, spa, servicii beauty">
+  <meta name="author" content="BeautyVilla by Ast">
+  
+  <meta property="og:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+  <meta property="og:description" content="Oferim servicii de top pentru îngrijirea și înfrumusețarea ta. Vino să te răsfeți în BeautyVilla by Ast!">
+  <meta property="og:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+  <meta property="og:url" content="https://www.beautyvilla.ro">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+  <meta name="twitter:description" content="Descoperă serviciile noastre premium de înfrumusețare și relaxare la BeautyVilla by Ast. Răsfață-te într-un mediu elegant și plăcut!">
+  <meta name="twitter:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+
+  
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/home-more.css">
+</head>
+<body>
+    <div class = "card-wrapper">
+        <div class="navs-bars" >
+            <a href="/"><div class="back">
+                <i class='bx bx-arrow-back' ></i>
+            </div></a>
+        </div>
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "swiper img-display">
+              <div class = "swiper-wrapper img-showcase" >
+                    <div class="swiper-slide rows r1"  ></div>
+                    <div class="swiper-slide rows r2" ></div>
+                    <div class="swiper-slide rows r3"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h2 class = "product-title">RITUAL</h2>
+            <div class="services-more" style="display: flex;flex-wrap: wrap;">
+              <a class = "product-link active" data-category="so" style="font-size: 14px;"> SENZATII ORIENTALE</a>
+              <a class = "product-link" data-category="anticelulitic" style="font-size: 14px;"> HANA KASUMI</a>
+              <a class = "product-link" data-category="sso" style="font-size: 14px;"> SPA SENZATII ORIENTALE</a>
+              <a class = "product-link" data-category="shk" style="font-size: 14px;"> SPA HANA KASUMI</a>
+              <a class = "product-link" data-category="t2to" style="font-size: 14px;" > TOP 2 TOE SENZATII ORIENTALE</a>
+              <a class = "product-link" data-category="t2th" style="font-size: 14px;" > TOP 2 TOE HANA KASUMI</a>
+            </div>
+
+            <div class = "product-rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              <span>5(21)</span>
+            </div>
+            <div class = "product-price" style="height: unset;">
+              <p class = "new-price">Price: <span>350 RON</span></p>
+            </div>
+            <div class = "product-detail">
+              <h2><span id="type">RELAXARE</span> </h2>
+              <p>Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.</p>
+              <ul>
+                <li>Timp: <span class="time"> 90 Minute</span></li>
+                <li id="j">JACUZZI</li>
+                <li id="r"></li>
+                <li id="s">SAUNA</li>
+                <li id="h"></li>
+                <li id="c"></li>
+              </ul>
+            </div>
+            <a href="https://live.evobeauty.ro/online/beautyvilla/"><button class="button_pr">Programeaza-te!</button></a>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".img-display", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
+var productData = {
+  so: {
+        price: "350 RON",
+        duration: "90 Minute",
+        benefits: "Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.",
+        type: "SENZATII ORIENTALE",
+        j: "JACUZZI",
+        s: "SAUNA",
+
+
+    },
+    anticelulitic: {
+        price: "350 RON",
+        duration: "90 Minute",
+        benefits: "Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.",
+        type: "HANA KASUMI",
+        j: "JACUZZI",
+        s: "SAUNA",
+    }
+    ,
+    sso: {
+        price: "400 RON",
+        duration: "2h30 Minute",
+        benefits: "Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.",
+        type: "SPA SENZATII ORIENTALE",
+        j: "JACUZZI 30 Minute",
+        r: "RITUAL 90 Minute",
+        s: "SAUNA 30 Minute",
+    }
+    ,
+    shk: {
+        price: "400 RON",
+        duration: "2h30 Minute",
+        benefits: "Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.",
+        type: "SPA HANA KASUMI",
+        j: "JACUZZI 30 Minute",
+        r: "RITUAL 90 Minute",
+        s: "SAUNA 30 Minute",
+    }
+    ,
+    t2th: {
+        price: "600 RON",
+        duration: "3H30 Minute",
+        benefits: "Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.",
+        type: "RITUAL TOP 2 TOE SPA SENZATII ORIENTALE",
+        j: "JACUZZI 30 Minute",
+        r: "RITUAL 90 Minute",
+        s: "SAUNA 30 Minute",
+        h: "HEAD SPA",
+        c: "COAFAT",
+    }
+};
+
+
+
+
+      var productLink = document.querySelectorAll('.product-link')
+      productLink.forEach(element => {
+        element.addEventListener('click', ()=>{
+            
+            productLink.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+            var selectedCategory = element.getAttribute('data-category');
+            console.log(selectedCategory)
+            var data = productData[selectedCategory];
+            console.log(data)
+            document.querySelector('.new-price span').textContent = data.price;
+            document.querySelector('.product-rating span').textContent = data.rating;
+            document.querySelector('.product-detail p').textContent = data.benefits;
+            document.querySelector('.time').textContent = data.duration;
+            document.querySelector('#type').textContent = data.type;
+            document.querySelector('#j').textContent = data.j;
+            document.querySelector('#r').textContent = data.r;
+            document.querySelector('#s').textContent = data.s;
+            document.querySelector('#h').textContent = data.h;
+            document.querySelector('#c').textContent = data.c;
+            // document.querySelector('.categorie').textContent = data.categorie;
+            // document.querySelector('.deplasari').textContent = data.deplasari;
+            // document.querySelector('.gene').textContent = data.gene;
+
+
+        })
+
+
+
+
+
+      });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+</html>

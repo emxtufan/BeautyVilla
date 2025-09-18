@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare</title>
+    <meta name="description" content="BeautyVilla by Ast oferă o gamă largă de servicii de înfrumusețare și relaxare, inclusiv machiaj, coafură, tratamente faciale și masaj. Descoperă experiența de lux!">
+    <meta name="keywords" content="BeautyVilla, Asta, înfrumusețare, relaxare, machiaj, coafură, tratamente faciale, masaj, saloane de înfrumusețare, spa, servicii beauty">
+    <meta name="author" content="BeautyVilla by Ast">
+    
+    <meta property="og:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+    <meta property="og:description" content="Oferim servicii de top pentru îngrijirea și înfrumusețarea ta. Vino să te răsfeți în BeautyVilla by Ast!">
+    <meta property="og:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+    <meta property="og:url" content="https://www.beautyvilla.ro">
+    <meta property="og:type" content="website">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+    <meta name="twitter:description" content="Descoperă serviciile noastre premium de înfrumusețare și relaxare la BeautyVilla by Ast. Răsfață-te într-un mediu elegant și plăcut!">
+    <meta name="twitter:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+
+    
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    
+    <link rel="stylesheet" href="./snipped.css">
+    <link rel="stylesheet" href="./herro.css">
+    <link rel="stylesheet" href="./fundation.css">
+    <link rel="stylesheet" href="./responisve.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="for_men.css">
+
+</head>
+
+<body>
+    <div>
+        
+        <main id="main_class" style="padding-top: 0!important;">
+            <div>
+                <div class="navs-bars" >
+                    <a href="/"><div class="back">
+                        <i class='bx bx-arrow-back' ></i>
+                    </div></a>
+                </div>
+                <style>
+                    .navs-bars {
+                        width: 100%;
+                            height: 57px;
+                            background-color: #ffffff5c;
+                            position: absolute;
+                            z-index: 3;
+                            top: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: fixed;
+                            backdrop-filter: blur(5px);
+                        }
+                        .navs-bars a {
+                            color: black;
+                            text-decoration: none;
+                        }
+                        .back {
+                            width: 52px;
+                            height: 36px;
+                            background-color: rgb(255, 255, 255);
+                            margin-left: 20px;
+                            border-radius: 999px;
+                            border: 1px solid rgb(211, 211, 211);
+                            justify-content: center;
+                            align-items: center;
+                            display: flex
+                        ;
+                        }
+                        .bt{
+                            text-decoration: none;
+                        }
+                        .buttons{
+                            width: 100%; height: 40px; background: linear-gradient(to right, #DDC0B4, #EBD884);color:white; margin-bottom: 30px;text-align: center;display: flex;align-items: center; justify-content: center;border-radius: 12px;
+                        }
+                </style>
+                <section class="hp_-xa2 padding_block_0">
+                    <div class="card-bqd" style="padding-top: 20px;">
+                        <h2 class="title-ty5" style="letter-spacing:0">Lista Preturi</h2>
+                        <p class="content-4hr text-b9e font_more_1" style="padding-bottom: 0; padding-top: 10px;">
+                            Descoperă serviciile noastre de beauty la prețuri competitive, care îți oferă răsfățul pe care îl meriți. </p>
+                    </div>
+                    <div class="container-jce">
+                        <div class="btn-for-pro">
+                            <input type="text" id="searchInput" class="search-box" placeholder="Căutați un serviciu..." onkeyup="filterServices()">
+                            <div class="container">
+                                <div class="accordion" id="servicesAccordion"></div>
+                                <a href="https://live.evobeauty.ro/online/beautyvilla/" class="bt"><div class="buttons">
+                                    Programeaza-te
+                                </div></a>
+
+                            </div>
+                        </div>
+                    
+                    </div>
+                </section>
+            </div>
+        </main>
+        <style>
+            .accordion{
+                width: 700px!important;
+            }
+            .accordion-button:not(.collapsed) {
+                color: #000000;
+                background-color: #EBD884 !important;
+                box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+            }
+            .accordion-button:focus{
+                border-color: #EBD884!important;
+                box-shadow: 0 0 0 .25rem #a4860028 ;
+            }
+
+
+            @media (max-width: 767px) {
+                .accordion{
+                max-width: 400px;
+            }
+            }
+            
+            .menu-item {
+            margin: 35px 0;
+            font-size: 18px;
+            text-align: left;
+            }
+
+            .menu-item-name{
+            font-family: helvetica;
+            font-weight: bold;
+            border-bottom: 2px dotted rgb(213, 213, 213);
+            }
+
+            .menu-item-description {
+            font-style: italic;
+            font-size: .9em;
+            line-height: 1.5em;
+            }
+
+            .menu-item-price{
+            float: right;
+            font-weight: bold;
+            font-family: arial;
+            margin-top: -22px;
+            }
+        </style>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+<script src="./script.js" defer></script>
+<style>
+    .btn-for-pro{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   .btn-for-pro input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        @media screen and (min-width:700px) {
+            .btn-for-pro input[type="text"] {
+                width: 50%;
+        }
+    }
+</style>
+
+
+<script>
+    const services = [
+        {
+            name: "COAFOR",
+            types: [
+                    { "name": "Cupa Pudra Dec", "description": "", "price": "35 Lei" },
+                    { "name": "Set Extensii - Set 40 Benzi", "description": "(Pe Comanda)", "price": "2400 Lei" },
+                    { "name": "Tub Vopsea", "description": "", "price": "100 Lei" },
+                    { "name": "Aplicat", "description": "Timp estimat: 90 minute", "price": "300 Lei" },
+                    { "name": "Coafat Afro / Waves", "description": "Timp estimat: 60 minute", "price": "250 Lei" },
+                    { "name": "Coafat Special", "description": "Timp estimat: 60 minute", "price": "300 Lei" },
+                    { "name": "Decolorat Radacina", "description": "Timp estimat: 60 minute", "price": "200 Lei" },
+                    { "name": "Decolorat Total", "description": "Timp estimat: 90 minute", "price": "500 Lei" },
+                    { "name": "Intretinere", "description": "Timp estimat: 120 minute", "price": "550 Lei" },
+                    { "name": "Manopera", "description": "Timp estimat: 30 minute", "price": "80 Lei" },
+                    { "name": "Nuantat (Scafa) - Simplu", "description": "Timp estimat: 90 minute", "price": "50 Lei" },
+                    { "name": "Nuantat (Scafa) - Vopsea", "description": "Timp estimat: 120 minute", "price": "250 Lei" },
+                    { "name": "Spalat", "description": "Timp estimat: 30 minute", "price": "50 Lei" },
+                    { "name": "Spalat Coafat Extensii", "description": "Timp estimat: 60 minute", "price": "180 Lei" },
+                    { "name": "Spalat Coafat L", "description": "Timp estimat: 60 minute", "price": "150 Lei" },
+                    { "name": "Spalat Coafat M", "description": "Timp estimat: 60 minute", "price": "140 Lei" },
+                    { "name": "Spalat Coafat S", "description": "Timp estimat: 60 minute", "price": "130 Lei" },
+                    { "name": "Spalat Tuns Coafat", "description": "Timp estimat: 60 minute", "price": "200 Lei" },
+                    { "name": "Spalat Tuns Uscat", "description": "Timp estimat: 60 minute", "price": "150 Lei" },
+                    { "name": "Tratamente Lendan", "description": "Timp estimat: 60 minute", "price": "260 Lei" },
+                    { "name": "Tratamente Salerm 21 - Basic", "description": "Timp estimat: 60 minute", "price": "210 Lei" },
+                    { "name": "Tratamente Salerm 21 - Complex", "description": "Timp estimat: 60 minute", "price": "260 Lei" },
+                    { "name": "Tratamente 4 Fiole De Reparare", "description": "Timp estimat: 60 minute", "price": "210 Lei" },
+                    { "name": "Tuns", "description": "Timp estimat: 30 minute", "price": "90 Lei" },
+                    { "name": "Tuns Breton", "description": "Timp estimat: 15 minute", "price": "30 Lei" },
+                    { "name": "Tuns Copii", "description": "Timp estimat: 30 minute (Nu Include Spalat Coafat)", "price": "60 Lei" },
+                    { "name": "Tuns Varfuri", "description": "Timp estimat: 30 minute", "price": "60 Lei" },
+                    { "name": "Uscat", "description": "Timp estimat: 30 minute", "price": "50 Lei" },
+                    { "name": "Vopsit 1 Tub", "description": "Timp estimat: 120 minute (Include Coafat)", "price": "350 Lei" },
+                    { "name": "Vopsit 1.5 Tuburi (Include Coafat)", "description": "Timp estimat: 120 minute", "price": "400 Lei" },
+                    { "name": "Vopsit 2 Tuburi Vopsea", "description": "Timp estimat: 120 minute (Include Coafat)", "price": "450 Lei" },
+                    { "name": "Vopsit Tehnica", "description": "Timp estimat: 300 minute", "price": "600 Lei" }
+                    ]
+        },
+        {
+            name: "MANI/PEDI",
+            types: [
+                { "name": "Constructie Gel L", "description": "Timp estimat: 150 minute", "price": "220 Lei" },
+                { "name": "Constructie Gel M", "description": "Timp estimat: 150 minute", "price": "210 Lei" },
+                { "name": "Constructie Gel S", "description": "Timp estimat: 150 minute", "price": "200 Lei" },
+                { "name": "Constructie Slim L", "description": "Timp estimat: 120 minute", "price": "340 Lei" },
+                { "name": "Constructie Slim M", "description": "Timp estimat: 120 minute", "price": "320 Lei" },
+                { "name": "Constructie Slim S", "description": "Timp estimat: 120 minute", "price": "300 Lei" },
+                { "name": "Extra Dificultate", "description": "Timp estimat: 15 minute", "price": "30 Lei" },
+                { "name": "Inlaturare Oja Semi (Din Alt Centru)", "description": "Timp estimat: 15 minute", "price": "30 Lei" },
+                { "name": "Intretinere Gel L", "description": "Timp estimat: 120 minute", "price": "190 Lei" },
+                { "name": "Intretinere Gel M", "description": "Timp estimat: 120 minute", "price": "180 Lei" },
+                { "name": "Intretinere Gel S", "description": "Timp estimat: 120 minute", "price": "170 Lei" },
+                { "name": "Manichiura Apex", "description": "Timp estimat: 75 minute", "price": "150 Lei" },
+                { "name": "Manichiura Apex + Culoare", "description": "Timp estimat: 75 minute", "price": "160 Lei" },
+                { "name": "Manichiura Clasica", "description": "Timp estimat: 60 minute", "price": "95 Lei" },
+                { "name": "Manichiura Protectie Gel", "description": "Timp estimat: 75 minute (Unghia Naturala)", "price": "160 Lei" },
+                { "name": "Manichiura Rubber", "description": "Timp estimat: 60 minute", "price": "140 Lei" },
+                { "name": "Manichiura Semipermanenta", "description": "Timp estimat: 60 minute", "price": "130 Lei" },
+                { "name": "Masaj 25 min", "description": "Timp estimat: 30 minute", "price": "80 Lei" },
+                { "name": "Pedichiura Clasica", "description": "Timp estimat: 60 minute", "price": "100 Lei" },
+                { "name": "Pedichiura Semipermanenta", "description": "Timp estimat: 60 minute", "price": "150 Lei" },
+                { "name": "Tratament Parafina", "description": "Timp estimat: 15 minute", "price": "50 Lei" }
+                ]
+        },
+        {
+            name: "COSMETICA FACIALA",
+            types: [
+                { "name": "Mesoterapie", "description": "Timp estimat: 1 minut", "price": "50 Lei" },
+                { "name": "Microdermabraziune", "description": "Timp estimat: 1 minut", "price": "50 Lei" },
+                { "name": "Oxygen Hiperbaric", "description": "Timp estimat: 1 minut", "price": "50 Lei" },
+                { "name": "Radiofrecventa Multipolara", "description": "Timp estimat: 1 minut", "price": "50 Lei" },
+                { "name": "Soft Laser Mask", "description": "Timp estimat: 1 minut", "price": "50 Lei" },
+                { "name": "Tratament Facial: All Skin Types", "description": "Timp estimat: 90 minute", "price": "350 Lei" },
+                { "name": "Tratament Facial: Contur Ochi Si Buze", "description": "Timp estimat: 90 minute", "price": "200 Lei" },
+                { "name": "Tratament Facial: Ten Acneic", "description": "Timp estimat: 90 minute", "price": "350 Lei" },
+                { "name": "Tratament Facial: Ten Gras", "description": "Timp estimat: 90 minute", "price": "350 Lei" },
+                { "name": "Tratament Facial: Ten Matur", "description": "Timp estimat: 90 minute", "price": "350 Lei" },
+                { "name": "Tratament Facial: Ten Sensibil", "description": "Timp estimat: 90 minute", "price": "350 Lei" }
+                ]
+        },
+        {
+            name: "COSMETICA FACIALA AVANSATA",
+            types: [
+                { "name": "Eximia Facial", "description": "Timp estimat: 30 minute", "price": "350 Lei" },
+                { "name": "Extra - Ingredient Activ", "description": "Fiola BCN Advanced", "price": "160 Lei" },
+                { "name": "Extra - Ingredient Activ", "description": "Fiola BCN Clasic", "price": "60 Lei" },
+                { "name": "Extra - Ingredient Activ ", "description": "Fiola BCN Pro", "price": "110 Lei" },
+                { "name": "HIFU Barbie Dubla", "description": "Timp estimat: 60 minute", "price": "500 Lei" },
+                { "name": "HIFU Facelift Pro Plus", "description": "Timp estimat: 60 minute (2 Zone)", "price": "700 Lei" },
+                { "name": "HIFU Facelift Pro Plus", "description": "Timp estimat: 60 minute (Fata Integrala)", "price": "1100 Lei" },
+                { "name": "Microdermabraziune", "description": "Timp estimat: 60 minute", "price": "300 Lei" },
+                { "name": "Microneedling Advanced", "description": "Timp estimat: 60 minute", "price": "350 Lei" },
+                { "name": "Microneedling Capilar", "description": "Timp estimat: 60 minute", "price": "350 Lei" },
+                { "name": "Microneedling Clasic", "description": "Timp estimat: 60 minute", "price": "300 Lei" },
+                { "name": "Microneedling Pro", "description": "Timp estimat: 60 minute", "price": "320 Lei" },
+                { "name": "Oxigenera Advanced", "description": "Timp estimat: 90 minute", "price": "450 Lei" },
+                { "name": "Oxigenera Clasic", "description": "Timp estimat: 90 minute", "price": "380 Lei" },
+                { "name": "Oxigenera Pro", "description": "Timp estimat: 90 minute", "price": "420 Lei" }
+                ]
+        },
+        {
+            name: "EPILARE DEFINITIVA",
+            types: [
+                    { "name": "Epilare Definitiva Abdomen", "description": "Timp estimat: 15 minute", "price": "200 Lei" },
+                    { "name": "Epilare Definitiva Axile", "description": "Timp estimat: 15 minute", "price": "150 Lei" },
+                    { "name": "Epilare Definitiva Barbier", "description": "Timp estimat: 15 minute", "price": "80 Lei" },
+                    { "name": "Epilare Definitiva Brate Integral", "description": "Timp estimat: 15 minute", "price": "300 Lei" },
+                    { "name": "Epilare Definitiva Brate/ Antebrate", "description": "Timp estimat: 15 minute", "price": "200 Lei" },
+                    { "name": "Epilare Definitiva Coapse/ Gambe", "description": "Timp estimat: 30 minute", "price": "350 Lei" },
+                    { "name": "Epilare Definitiva Fata Integral", "description": "Timp estimat: 15 minute", "price": "240 Lei" },
+                    { "name": "Epilare Definitiva Fese", "description": "Timp estimat: 30 minute", "price": "200 Lei" },
+                    { "name": "Epilare Definitiva Inghinal Total", "description": "Timp estimat: 30 minute", "price": "280 Lei" },
+                    { "name": "Epilare Definitiva Interfesier", "description": "Timp estimat: 30 minute", "price": "120 Lei" },
+                    { "name": "Epilare Definitiva Linie Alba", "description": "Timp estimat: 15 minute", "price": "80 Lei" },
+                    { "name": "Epilare Definitiva Linie Bikini", "description": "Timp estimat: 30 minute", "price": "140 Lei" },
+                    { "name": "Epilare Definitiva Mustata", "description": "Timp estimat: 15 minute", "price": "80 Lei" },
+                    { "name": "Epilare Definitiva Perciuni", "description": "Timp estimat: 15 minute", "price": "80 Lei" },
+                    { "name": "Epilare Definitiva Periareoral", "description": "Timp estimat: 15 minute", "price": "80 Lei" },
+                    { "name": "Epilare Definitiva Picioare Integral", "description": "Timp estimat: 30 minute", "price": "600 Lei" },
+                    { "name": "Epilare Definitiva Pometi", "description": "Timp estimat: 15 minute", "price": "80 Lei" },
+                    { "name": "Epilare Definitiva Zona Lombara", "description": "Timp estimat: 15 minute", "price": "200 Lei" }
+                    ]
+
+        },
+        {
+            name: "PACHETE EPILARE DEFINITIVA",
+            types: [
+                { "name": "Epilare Definitiva Full Body", "description": "Timp estimat: 90 minute", "price": "550 Lei" },
+
+                { "name": "Epilare Definitiva 1", "description": "Timp estimat: 90 minute (Inghinal,Total, Axile,Include Interfesier)", "price": "300 Lei" },
+                { "name": "Epilare Definitiva 2 ", "description": "Timp estimat: 90 minute  (Inghinal,Total, Axile, Mustata,Include Interfesier)", "price": "350 Lei" },
+                { "name": "Epilare Definitiva 3", "description": "Timp estimat: 90 minute (Lung, Inghinal Total, Axile,Include Interfesier)", "price": "450 Lei" },
+                { "name": "Epilare Definitiva 4", "description": "Timp estimat: 90 minute (Lung, Inghinal Total, Axile, Mustata,Include Interfesier)", "price": "500 Lei" },
+                { "name": "Epilare Definitiva 5", "description": "Timp estimat: 90 minute (Scurt, Inghinal Total, Axile, Include Interfesier)", "price": "400 Lei" },
+                { "name": "Epilare Definitiva 6", "description": "Timp estimat: 90 minute(Scurt, Inghinal Total, Axile, Mustata)", "price": "450 Lei" }
+                ]
+        },
+        {
+            name: "EPILARE IGIENICA CU CEARA",
+            types: [
+                { "name": "Epilare cu Ceara Axile", "description": "Timp estimat: 15 minute", "price": "45 Lei" },
+                { "name": "Epilare cu Ceara Barbier", "description": "Timp estimat: 15 minute", "price": "35 Lei" },
+                { "name": "Epilare cu Ceara Brate Integral", "description": "Timp estimat: 30 minute", "price": "45 Lei" },
+                { "name": "Epilare cu Ceara Brate/ Antebrate", "description": "Timp estimat: 30 minute", "price": "35 Lei" },
+                { "name": "Epilare cu Ceara Coapse/ Gambe", "description": "Timp estimat: 30 minute", "price": "50 Lei" },
+                { "name": "Epilare cu Ceara Inghinal Bikini", "description": "Timp estimat: 15 minute", "price": "45 Lei" },
+                { "name": "Epilare cu Ceara Inghinal Total", "description": "Timp estimat: 30 minute", "price": "50 Lei" },
+                { "name": "Epilare cu Ceara Linie Alba", "description": "Timp estimat: 15 minute", "price": "25 Lei" },
+                { "name": "Epilare cu Ceara Mustata", "description": "Timp estimat: 15 minute", "price": "35 Lei" },
+                { "name": "Epilare cu Ceara Perciuni", "description": "Timp estimat: 15 minute", "price": "35 Lei" },
+                { "name": "Epilare cu Ceara Picioare Integral", "description": "Timp estimat: 30 minute", "price": "60 Lei" },
+                { "name": "Epilare cu Ceara Zona Lombara", "description": "Timp estimat: 30 minute", "price": "35 Lei" }
+                ]
+
+        }
+        ,
+        {
+            name: "COSMETICA GENELOR SI A SPRANCENELOR",
+            types: [
+            { "name": "Aplicat Gene Fir cu Fir 1D", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Aplicat Gene Fir cu Fir 2D", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Aplicat Gene Fir cu Fir 3D", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Aplicat Gene Fir cu Fir Mix", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Intretinere Gene Fir cu Fir 1D", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Intretinere Gene Fir cu Fir 2D", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Intretinere Gene Fir cu Fir 3D", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Intretinere Gene Fir cu Fir Mix", "description": "Timp estimat: 120 minute", "price": "1 Lei" },
+            { "name": "Laminare Gene / Sprancene", "description": "Timp estimat: 60 minute", "price": "150 Lei" },
+            { "name": "Pensat", "description": "Timp estimat: 30 minute", "price": "50 Lei" },
+            { "name": "Stilizat (Pensat, Vopsit)", "description": "Timp estimat: 30 minute", "price": "60 Lei" },
+            { "name": "Vopsit Sprancene", "description": "Timp estimat: 30 minute", "price": "35 Lei" }
+            ]
+
+
+        },
+        {
+            name: "MAKE-UP",
+            types: [
+            { "name": "Aplicat Gene Smoc", "description": "Timp estimat: 0 minute", "price": "50 Lei" },
+            { "name": "Bride Make-Up", "description": "Timp estimat: 90 minute", "price": "400 Lei" },
+            { "name": "Make-Up", "description": "Timp estimat: 90 minute", "price": "300 Lei" },
+            { "name": "Photoshooting Make-Up", "description": "Timp estimat: 90 minute", "price": "500 Lei" }
+            ]
+        },
+        {
+            name: "IMPACHETARI CORPORALE",
+            types:[
+        { "name": "Anticelulitice si de Slabire", "description": "Timp estimat: 60 minute  (Bio-Slim, Cellu-Slim)", "price": "160 Lei" },
+        { "name": "Detoxifiere ", "description": "Timp estimat: 60 minute (Eliminarea Retenției de Apă)", "price": "120 Lei" },
+        { "name": "Fermitate si Hidratare", "description": "Timp estimat: 60 minute (Fast-Slim, Bio-Firm)", "price": "160 Lei" }
+        ]
+
+        },
+        {
+            name: "TRATAMENTE CORPORALE",
+            types:[
+            { "name": "Drenaj Limfatic Mecanic", "description": "Timp estimat: 60 minute", "price": "120 Lei" },
+            { "name": "Eximia 1 ", "description": "Timp estimat: 30 minute (Eliminare Barbă Dublă)", "price": "120 Lei" },
+            { "name": "Eximia 2 ", "description": "Timp estimat: 60 minute (Slăbire și Remodelare - Abdomen)", "price": "270 Lei" },
+            { "name": "Eximia 3 ", "description": "Timp estimat: 60 minute (Slăbire și Remodelare - Abdomen și Spate)", "price": "320 Lei" },
+            { "name": "Eximia 4 ", "description": "Timp estimat: 30 minute (Slăbire și Remodelare - Brațe)", "price": "160 Lei" },
+            { "name": "Eximia 5 ", "description": "Timp estimat: 60 minute (Slăbire și Remodelare - Coapse)", "price": "320 Lei" },
+            { "name": "Eximia 6 ", "description": "Timp estimat: 60 minute (Slăbire și Remodelare - Coapse și Abdomen)", "price": "390 Lei" },
+            { "name": "Eximia 7 ", "description": "Timp estimat: 90 minute (Slăbire și Remodelare - Coapse, Abdomen, Brațe/Gambe)", "price": "490 Lei" },
+            { "name": "Extra A", "description": "Ingredient Activ Fiola BCN Advanced", "price": "160 Lei" },
+            { "name": "Extra B", "description": "Ingredient Activ Fiola BCN Clasic", "price": "60 Lei" },
+            { "name": "Extra C", "description": "Ingredient Activ Fiola BCN Pro", "price": "110 Lei" }
+            ]
+        }
+        ,
+        {
+            name: "MASAJ",
+            types:[
+            { "name": "Masaj Anticelulitic 60 min", "description": "Timp estimat: 60 minute", "price": "180 Lei" },
+            { "name": "Masaj cu Bete de Bambus 60 min", "description": "Timp estimat: 60 minute", "price": "250 Lei" },
+            { "name": "Masaj cu Pietre Calde 60 min", "description": "Timp estimat: 60 minute", "price": "250 Lei" },
+            { "name": "Masaj Deep Tissue 60 min", "description": "Timp estimat: 60 minute", "price": "250 Lei" },
+            { "name": "Masaj Drenaj Limfatic 60 min", "description": "Timp estimat: 60 minute", "price": "180 Lei" },
+            { "name": "Masaj Oriental 60 min", "description": "Timp estimat: 60 minute", "price": "250 Lei" },
+            { "name": "Masaj pentru Gravide 60 min", "description": "Timp estimat: 60 minute (In Alăptare)", "price": "250 Lei" },
+            { "name": "Masaj Reflexoterapie 30 min", "description": "Timp estimat: 30 minute", "price": "180 Lei" },
+            { "name": "Masaj Relaxare 60 min", "description": "Timp estimat: 60 minute", "price": "180 Lei" }
+            ]
+
+        },
+        {
+            name: "RITUAL SPA",
+            types:[
+            { "name": "Ritual Hana Kasumi 90 min", "description": "Timp estimat: 90 minute", "price": "350 Lei" },
+            { "name": "Ritual Senzatii Orientale 90 min", "description": "Timp estimat: 90 minute", "price": "350 Lei" },
+            { "name": "Ritual Spa Hana Kasumi", "description": "Timp estimat: 150 minute", "price": "400 Lei" },
+            { "name": "Ritual Spa Senzatii Orientale", "description": "Timp estimat: 150 minute", "price": "400 Lei" },
+            { "name": "Ritual Top 2 Toe Spa Hana Kasum", "description": "Timp estimat: 210 minute", "price": "600 Lei" },
+            { "name": "Ritual Top 2 Toe Spa Senzatii Orien..", "description": "Timp estimat: 210 minute", "price": "600 Lei" }
+            ]
+
+
+        },
+        {
+            name: "SPA PARTY",
+            types:[
+                { 
+                    "name": "Party 1", 
+                    "description": "Welcome (Apa, Cafea, Ceai, Fructe - 15 min), Sauna (30 min), Jacuzzi (30 min), Masaj (30 min), Prosecco", 
+                    "price": "500 Lei", 
+                },
+                { 
+                    "name": "Party 2", 
+                    "description": "Welcome (Apa, Cafea, Ceai, Fructe - 15 min), Sauna (30 min), Jacuzzi (30 min), Head Spa (120 min), Coafat (120 min), Prosecco", 
+                    "price": "667 Lei", 
+                },
+                { 
+                    "name": "Party 3", 
+                    "description": "Welcome (Apa, Cafea, Ceai, Fructe), Sauna, Jacuzzi, Masaj, Head Spa, Coafat, Prosecco", 
+                    "price": "833 Lei", 
+                }
+                ]
+
+
+
+        }
+    ];
+
+    function generateAccordion() {
+        let accordionContainer = document.getElementById("servicesAccordion");
+        accordionContainer.innerHTML = "";
+        
+        services.forEach((service, index) => {
+            let serviceHTML = `
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading${index}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}">
+                            ${service.name}
+                        </button>
+                    </h2>
+                    <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                        <div class="accordion-body">${generateServiceList(service.types)}</div>
+                    </div>
+                </div>`;
+            accordionContainer.innerHTML += serviceHTML;
+        });
+    }
+
+    function generateServiceList(types) {
+        return types.map(type => `
+            <div class="menu-item">
+                <div class="menu-item-name">${type.name} <span class="menu-item-price">${type.price}</span></div>
+                <div class="menu-item-description">${type.description}</div>
+            </div>
+        `).join('');
+    }
+
+    function filterServices() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        document.querySelectorAll(".accordion-item").forEach((item, index) => {
+            let serviceTitle = item.querySelector(".accordion-button").textContent.toLowerCase();
+            let items = item.querySelectorAll(".menu-item");
+            let matches = [...items].filter(it => it.textContent.toLowerCase().includes(input));
+            let collapseElement = document.getElementById(`collapse${index}`);
+            let button = item.querySelector(".accordion-button");
+            
+            if (input === "") {
+                item.style.display = "block";
+                button.classList.add("collapsed");
+                collapseElement.classList.remove("show");
+                items.forEach(it => it.style.display = "block");
+            } else if (serviceTitle.includes(input)) {
+                item.style.display = "block";
+                button.classList.remove("collapsed");
+                collapseElement.classList.add("show");
+                items.forEach(it => it.style.display = "block");
+            } else if (matches.length > 0) {
+                item.style.display = "block";
+                button.classList.remove("collapsed");
+                collapseElement.classList.add("show");
+                items.forEach(it => it.style.display = "none");
+                matches.forEach(match => match.style.display = "block");
+            } else {
+                item.style.display = "none";
+                button.classList.add("collapsed");
+                collapseElement.classList.remove("show");
+            }
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", generateAccordion);
+</script>
+</html>

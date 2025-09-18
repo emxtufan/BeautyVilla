@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare</title>
+  <meta name="description" content="BeautyVilla by Ast oferă o gamă largă de servicii de înfrumusețare și relaxare, inclusiv machiaj, coafură, tratamente faciale și masaj. Descoperă experiența de lux!">
+  <meta name="keywords" content="BeautyVilla, Asta, înfrumusețare, relaxare, machiaj, coafură, tratamente faciale, masaj, saloane de înfrumusețare, spa, servicii beauty">
+  <meta name="author" content="BeautyVilla by Ast">
+  
+  <meta property="og:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+  <meta property="og:description" content="Oferim servicii de top pentru îngrijirea și înfrumusețarea ta. Vino să te răsfeți în BeautyVilla by Ast!">
+  <meta property="og:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+  <meta property="og:url" content="https://www.beautyvilla.ro">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+  <meta name="twitter:description" content="Descoperă serviciile noastre premium de înfrumusețare și relaxare la BeautyVilla by Ast. Răsfață-te într-un mediu elegant și plăcut!">
+  <meta name="twitter:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+
+  
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/home-more.css">
+</head>
+<body>
+    <div class = "card-wrapper">
+        <div class="navs-bars" >
+            <a href="/"><div class="back">
+                <i class='bx bx-arrow-back' ></i>
+            </div></a>
+        </div>
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "swiper img-display">
+              <div class = "swiper-wrapper img-showcase" >
+                    <div class="swiper-slide rows massaj1"  ></div>
+                    <div class="swiper-slide rows massaj2" ></div>
+                    <div class="swiper-slide rows massaj3"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h2 class = "product-title">Masaj</h2>
+            <div class="services-more" style="display: flex;flex-wrap: wrap;">
+              <a class = "product-link active" data-category="relaxare">RELAXARE</a>
+              <a class = "product-link" data-category="anticelulitic">ANTICELULITIC</a>
+              <a class = "product-link" data-category="drenaj_limfatic" >DRENAJ LIMFATIC</a>
+              <a class = "product-link" data-category="reflexoterapie" >REFLEXOTERAPIE</a>
+              <a class = "product-link" data-category="bete_bambus" >BETE DE BAMBUS</a>
+              <a class = "product-link" data-category="pietre_calde" >PIETRE CALDE</a>
+              <a class = "product-link" data-category="deep_tissue" >DEEP TISSUE</a>
+              <a class = "product-link" data-category="oriental" >ORIENTAL</a>
+              <a class = "product-link" data-category="pentru_gravide" >PENTRU GRAVIDE</a>
+            </div>
+
+            <div class = "product-rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              <span>5(21)</span>
+            </div>
+            <div class = "product-price" style="height: unset;">
+              <p class = "new-price">Price: <span>300 RON</span></p>
+            </div>
+            <div class = "product-detail">
+              <h2><span id="type">RELAXARE</span> </h2>
+              <p>Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.</p>
+              <ul>
+                <li>Time: <span class="time"> 90 Minute</span></li>
+                <li>Categorie: <span> Relaxare</span></li>
+                <li>Deplasari: <span> Nu</span></li>
+              </ul>
+            </div>
+            <a href="https://live.evobeauty.ro/online/beautyvilla/"><button class="button_pr">Programeaza-te!</button></a>
+
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".img-display", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
+var productData = {
+
+    relaxare: {
+        price: "180 RON",
+        duration: "60 Minute",
+        benefits: "Reduce stresul, îmbunătățește circulația și oferă o stare profundă de relaxare.",
+        type: "Masaj de Relaxare"
+    },
+    anticelulitic: {
+        price: "180 RON",
+        duration: "50 Minute",
+        benefits: "Stimulează circulația, ajută la reducerea celulitei și tonifiază pielea.",
+        type: "Masaj Anticelulitic"
+    },
+    reflexoterapie: {
+        price: "180 RON",
+        duration: "30 Minute",
+        benefits: "Stimulează circulația, ajută la reducerea celulitei și tonifiază pielea.",
+        type: "Masaj Anticelulitic"
+    },
+    
+    drenaj_limfatic: {
+        price: "180 RON",
+        duration: "60 Minute",
+        benefits: "Elimină toxinele, îmbunătățește circulația limfatică și reduce retenția de apă.",
+        type: "Masaj Drenaj Limfatic"
+    },
+    bete_bambus: {
+        price: "250 RON",
+        duration: "60 Minute",
+        benefits: "Tehnică exotică ce ajută la relaxare profundă și îmbunătățirea circulației sângelui.",
+        type: "Masaj cu Bete de Bambus"
+    },
+    pietre_calde: {
+        price: "250 RON",
+        duration: "60 Minute",
+        benefits: "Folosirea pietrelor vulcanice ajută la relaxarea musculară profundă și echilibrarea energetică.",
+        type: "Masaj cu Pietre Calde"
+    },
+    deep_tissue: {
+        price: "250 RON",
+        duration: "60 Minute",
+        benefits: "Lucrează în profunzime asupra tensiunii musculare și elimină durerile cauzate de stres.",
+        type: "Masaj Deep Tissue"
+    },
+    oriental: {
+        price: "250 RON",
+        duration: "60 Minute",
+        benefits: "Tehnici tradiționale asiatice pentru relaxare și revitalizare a corpului și minții.",
+        type: "Masaj Oriental"
+    },
+    pentru_gravide: {
+        price: "250 RON",
+        duration: "60 Minute",
+        benefits: "Special conceput pentru viitoarele mămici, ajută la reducerea disconfortului și relaxare.",
+        type: "Masaj pentru Gravide"
+    }
+};
+
+
+
+
+      var productLink = document.querySelectorAll('.product-link')
+      productLink.forEach(element => {
+        element.addEventListener('click', ()=>{
+            
+            productLink.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+            var selectedCategory = element.getAttribute('data-category');
+            console.log(selectedCategory)
+            var data = productData[selectedCategory];
+            console.log(data)
+            document.querySelector('.new-price span').textContent = data.price;
+            document.querySelector('.product-rating span').textContent = data.rating;
+            document.querySelector('.product-detail p').textContent = data.benefits;
+            document.querySelector('.time').textContent = data.duration;
+            document.querySelector('#type').textContent = data.type;
+            // document.querySelector('.categorie').textContent = data.categorie;
+            // document.querySelector('.deplasari').textContent = data.deplasari;
+            // document.querySelector('.gene').textContent = data.gene;
+
+
+        })
+
+
+
+
+
+      });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+</html>

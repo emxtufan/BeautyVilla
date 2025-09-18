@@ -1,0 +1,572 @@
+@font-face { 
+    font-family:NespressoLucas;
+    src:url(../fonts/NespressoLucas-Light.eot);
+    src:url(../fonts/NespressoLucas-Light.eot?#iefix) format('embedded-opentype'),url(../fonts/NespressoLucas-Light.woff2) format('woff2'),url(../fonts/NespressoLucas-Light.woff) format('woff'),url(../fonts/NespressoLucas-Light.ttf) format('truetype'),url(../fonts/NespressoLucas-Light.otf) format('opentype'),url(../fonts/NespressoLucas-Light.svg#NespressoLucas-Light) format('svg');
+    font-weight:300;
+    font-style:normal;
+    font-display:swap;
+  } 
+  @font-face { 
+    font-family:NespressoLucas;
+    src:url(../fonts/NespressoLucas-Regular.eot);
+    src:url(../fonts/NespressoLucas-Regular.eot?#iefix) format('embedded-opentype'),url(../fonts/NespressoLucas-Regular.woff2) format('woff2'),url(../fonts/NespressoLucas-Regular.woff) format('woff'),url(../fonts/NespressoLucas-Regular.ttf) format('truetype'),url(../fonts/NespressoLucas-Regular.otf) format('opentype'),url(../fonts/NespressoLucas-Regular.svg#NespressoLucas-Regular) format('svg');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+  } 
+  @font-face { 
+    font-family:NespressoLucas;
+    src:url(../fonts/NespressoLucas-Med.eot);
+    src:url(../fonts/NespressoLucas-Med.eot?#iefix) format('embedded-opentype'),url(../fonts/NespressoLucas-Med.woff2) format('woff2'),url(../fonts/NespressoLucas-Med.woff) format('woff'),url(../fonts/NespressoLucas-Med.ttf) format('truetype'),url(../fonts/NespressoLucas-Med.otf) format('opentype'),url(../fonts/NespressoLucas-Med.svg#NespressoLucas-Med) format('svg');
+    font-weight:500;
+    font-style:normal;
+    font-display:swap;
+  } 
+  @font-face { 
+    font-family:NespressoLucas;
+    src:url(../fonts/NespressoLucas-SemiBd.eot);
+    src:url(../fonts/NespressoLucas-SemiBd.eot?#iefix) format('embedded-opentype'),url(../fonts/NespressoLucas-SemiBd.woff2) format('woff2'),url(../fonts/NespressoLucas-SemiBd.woff) format('woff'),url(../fonts/NespressoLucas-SemiBd.ttf) format('truetype'),url(../fonts/NespressoLucas-SemiBd.otf) format('opentype'),url(../fonts/NespressoLucas-SemiBd.svg#NespressoLucas-SemiBd) format('svg');
+    font-weight:600;
+    font-style:normal;
+    font-display:swap;
+  } 
+  @font-face { 
+    font-family:NespressoLucas;
+    src:url(../fonts/NespressoLucas-Bold.eot);
+    src:url(../fonts/NespressoLucas-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/NespressoLucas-Bold.woff2) format('woff2'),url(../fonts/NespressoLucas-Bold.woff) format('woff'),url(../fonts/NespressoLucas-Bold.ttf) format('truetype'),url(../fonts/NespressoLucas-Bold.otf) format('opentype'),url(../fonts/NespressoLucas-Bold.svg#NespressoLucas-Bold) format('svg');
+    font-weight:700;
+    font-style:normal;
+    font-display:swap;
+  } 
+  @font-face { 
+    font-family:NespressoLucas;
+    src:url(../fonts/NespressoLucas-XtraBd.eot);
+    src:url(../fonts/NespressoLucas-XtraBd.eot?#iefix) format('embedded-opentype'),url(../fonts/NespressoLucas-XtraBd.woff2) format('woff2'),url(../fonts/NespressoLucas-XtraBd.woff) format('woff'),url(../fonts/NespressoLucas-XtraBd.ttf) format('truetype'),url(../fonts/NespressoLucas-XtraBd.otf) format('opentype'),url(../fonts/NespressoLucas-XtraBd.svg#NespressoLucas-XtraBd) format('svg');
+    font-weight:800;
+    font-style:normal;
+    font-display:swap;
+  } 
+
+
+
+  
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'NespressoLucas' !important;
+}
+body{
+    line-height: 1.5;
+}
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    min-width: 350px;
+    position: relative;
+    
+
+}
+.navs-bars{
+    width: 100%;height: 100px;background-color:transparent;position: absolute;z-index: 3;top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navs-bars a{
+    color: black;
+    text-decoration: none;
+}
+.back{
+    width: 52px;
+    height: 36px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    border-radius: 999px;
+    border: 1px solid rgb(211, 211, 211);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.back i{
+    font-size: 22px;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+    
+
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+    width: 500px;height: 350px;
+
+}
+
+
+
+
+
+
+.img-showcase img{
+    min-width: 100%;
+    
+
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #000000;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #000000;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0 0.1rem;
+    transition: all 0.5s ease;
+    /* border-radius: 12px; */
+    border-bottom: 2px solid #EBD884;
+    color: #000000;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+
+
+.product-link.active{
+    background-image: linear-gradient(to right, #DDC0B4, #EBD884);
+    color: #ffffff;
+    border-bottom: 1px solid #EBD884;
+    
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    
+    font-weight: 700;
+    overflow-y: auto;height: 350px;border-bottom: 2px solid #EBD884;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #EBD884;
+    font-weight: 900;
+    
+}
+.new-price{
+    font-size: 20px;
+}
+.product-detail h2{
+    text-transform: capitalize;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.button_pr{
+    background: linear-gradient(to right, #DDC0B4, #EBD884);
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.product-detail ul li{
+background: url('../images/img/icon/bxs-bookmark-plus.svg') left center no-repeat;
+margin: 0;
+list-style: none;
+background-size: 18px;
+padding-left: 1.7rem;
+margin: 0.4rem 0;
+font-weight: 600;
+opacity: 0.9;
+}
+
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+
+.purchase-info .btn:last-of-type{
+    background: #ffffff;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+
+.rows{
+    width: 100%; height: 100%;;
+    
+}
+
+.images1{
+    background: url('/images/img/nunta/nunta1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.images2{
+    background: url('/images/img/nunta/nunta2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.images3{
+    background: url('/images/img/nunta/nunta3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.massaj1{
+    background: url('/images/img/nunta/masaj1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.massaj2{
+    background: url('/images/img/nunta/masaj2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.massaj3{
+    background: url('/images/img/nunta/masaj3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.mani1{
+    background: url('/images/img/nunta/mani1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.mani2{
+    background: url('/images/img/nunta/mani2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.mani3{
+    background: url('/images/img/nunta/mani3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.gene1{
+    background: url('/images/img/nunta/gene1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.gene2{
+    background: url('/images/img/nunta/gene2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.gene3{
+    background: url('/images/img/nunta/gene3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.face1{
+    background: url('/images/img/nunta/face1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.face2{
+    background: url('/images/img/nunta/face2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.face3{
+    background: url('/images/img/nunta/face3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.epilare1{
+    background: url('/images/img/nunta/epilare3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.epilare2{
+    background: url('/images/img/nunta/epilare2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.epilare3{
+    background: url('/images/img/nunta/epilare3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.coafat1{
+    background: url('/images/img/nunta/hair1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.coafat2{
+    background: url('/images/img/nunta/hair2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.coafat3{
+    background: url('/images/img/nunta/hair3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+
+.imapchetari1{
+    background: url('/images/img/nunta/imapchetari1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.imapchetari2{
+    background: url('/images/img/nunta/imapchetari2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.imapchetari3{
+    background: url('/images/img/nunta/imapchetari3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.r1{
+    background: url('/images/img/nunta/spa2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.r2{
+    background: url('/images/img/nunta/spa1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.r3{
+    background: url('/images/img/nunta/spa3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+@media screen and (max-width: 474px){
+    .product-link{
+    width: 150px!important;
+    }}
+@media screen and (min-width: 967px){
+    .img-showcase{
+        width: 500px;height: 600px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+
+
+.swiper-button-next, .swiper-button-prev{
+    color: rgb(255, 255, 255)!important;
+}
+.swiper-pagination-bullet-active
+{
+    background: white!important;
+}
+
+
+
+
+
+
+.menu-item {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .menu-item-name{
+    font-weight: bold;
+    border-bottom: 2px dotted rgb(213, 213, 213);
+  }
+  
+  .menu-item-description {
+    font-size: .8em;
+    line-height: 1em;
+    color: #00000059;
+  }
+  
+  .menu-item-price{
+    float: right;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: -22px;
+  }

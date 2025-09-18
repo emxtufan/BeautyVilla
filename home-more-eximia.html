@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare</title>
+  <meta name="description" content="BeautyVilla by Ast oferă o gamă largă de servicii de înfrumusețare și relaxare, inclusiv machiaj, coafură, tratamente faciale și masaj. Descoperă experiența de lux!">
+  <meta name="keywords" content="BeautyVilla, Asta, înfrumusețare, relaxare, machiaj, coafură, tratamente faciale, masaj, saloane de înfrumusețare, spa, servicii beauty">
+  <meta name="author" content="BeautyVilla by Ast">
+  
+  <meta property="og:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+  <meta property="og:description" content="Oferim servicii de top pentru îngrijirea și înfrumusețarea ta. Vino să te răsfeți în BeautyVilla by Ast!">
+  <meta property="og:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+  <meta property="og:url" content="https://www.beautyvilla.ro">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BeautyVilla by Ast - Servicii de Înfrumusețare și Relaxare">
+  <meta name="twitter:description" content="Descoperă serviciile noastre premium de înfrumusețare și relaxare la BeautyVilla by Ast. Răsfață-te într-un mediu elegant și plăcut!">
+  <meta name="twitter:image" content="https://beautyvilla.ro/images/a7404f46-1d78-441c-a678-799bac6eefa2.jpg">
+
+  
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/home-more.css">
+</head>
+<body>
+    <div class = "card-wrapper">
+        <div class="navs-bars" >
+            <a href="/"><div class="back">
+                <i class='bx bx-arrow-back' ></i>
+            </div></a>
+        </div>
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "swiper img-display">
+              <div class = "swiper-wrapper img-showcase" >
+                    <div class="swiper-slide rows massaj1"  ></div>
+                    <div class="swiper-slide rows massaj2" ></div>
+                    <div class="swiper-slide rows massaj3"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h2 class = "product-title">EXIMIA</h2>
+            <div class="services-more" style="display: flex;flex-wrap: wrap;">
+              <a class = "product-link active" data-category="bd">BARBIE DUBLA</a>
+              <a class = "product-link" data-category="b">BRATE </a>
+              <a class = "product-link" data-category="c">COAPSE </a>
+              <a class = "product-link" data-category="a">ABDOMEN </a>
+              <a class = "product-link" data-category="as"> ABDOMEN si SPATE</a>
+              <a class = "product-link" data-category="ca"> COAPSE si ABDOMEN</a>
+              <a class = "product-link" data-category="t"> TOTAL</a>
+            </div>
+
+            <div class = "product-rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              <span>5(21)</span>
+            </div>
+            <div class = "product-price" style="height: unset;">
+              <p class = "new-price">Price: <span>120 RON</span></p>
+            </div>
+            <div class = "product-detail">
+              <h2><span id="type">ELIMINARE BARBIE DUBLA</span> </h2>
+              <p>Un tratament revoluționar care ajută la conturarea perfectă a liniei maxilarului, eliminând aspectul nedorit al bărbii duble. Prin tehnologii avansate, acest tratament reduce vizibilitatea adiposului din zona feței, oferind o estetică mai definită și un look natural, fără intervenții invazive. Ideal pentru obținerea unui contur facial mai tineresc și mai armonios</p>
+              <ul>
+                <li>Time: <span class="time"> 20 Minute</span></li>
+              </ul>
+            </div>
+            <a href="https://live.evobeauty.ro/online/beautyvilla/"><button class="button_pr">Programeaza-te!</button></a>
+
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".img-display", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
+var productData = {
+
+  bd: {
+        price: "120 RON",
+        duration: "20 Minute",
+        benefits: "Un tratament revoluționar care ajută la conturarea perfectă a liniei maxilarului, eliminând aspectul nedorit al bărbii duble. Prin tehnologii avansate, acest tratament reduce vizibilitatea adiposului din zona feței, oferind o estetică mai definită și un look natural, fără intervenții invazive. Ideal pentru obținerea unui contur facial mai tineresc și mai armonios",
+        type: "ELIMINARE BARBIE DUBLA"
+    },
+    b: {
+        price: "160 RON",
+        duration: "20 Minute",
+        benefits: "Un tratament eficient destinat remodelării și tonifierii brațelor. Acesta reduce excesul de grăsime, lăsând pielea mai fermă și netedă. Prin tehnologie de ultimă generație, procedura ajută la îmbunătățirea aspectului general al brațelor, oferindu-le un contur mai definit și un look mai tonifiat, fără a recurge la intervenții chirurgicale. Ideal pentru un aspect mai sculptat și încrezător.",
+        type: "SLABIRE SI REMODELAREA BRATELOR"
+    },
+    c: {
+        price: "320 RON",
+        duration: "45 Minute",
+        benefits: "Un tratament eficient pentru reducerea grăsimii și tonifierea coapselor. În 45 de minute, ajută la diminuarea celulitei și îmbunătățirea fermității pielii, lăsând coapsele mai suplu conturate și tonifiate. Ideal pentru un aspect mai definit și elegant",
+        type: "SLABIRE SI REMODELARE COAPSELOR"
+    },
+    a: {
+       price: "270 RON",
+        duration: "30 Minute",
+        benefits: "Un tratament eficient pentru reducerea grăsimii și tonifierea abdomenului. În doar 30 de minute, ajută la diminuarea excesului de grăsime și la îmbunătățirea fermității pielii, oferind un abdomen mai plat și definit.",
+        type: "SLABIRE SI REMODELARE ABDOMENULUI"
+    },
+    as: {
+       price: "320 RON",
+        duration: "45 Minute",
+        benefits: "Un tratament complet pentru slăbire și remodelare, axat pe abdomen și spate. În 45 de minute, ajută la reducerea grăsimii și tonifierea zonei abdominale și dorsale, oferind o siluetă mai conturată și fermă.",
+        type: "ABDOMEN si SPATE"
+    },
+    ca:{
+       price: "390 RON",
+        duration: "60 Minute",
+        benefits: "Un tratament combinat pentru slăbire și remodelare, concentrat pe coapse și abdomen. În 60 de minute, veți obține o reducere a grăsimii și o tonifiere accentuată a ambelor zone, pentru un aspect mai suplu și mai ferm.",
+        type: "COAPSE si ABDOMEN"
+    },
+    t:{
+       price: "490 RON",
+        duration: "90 Minute",
+        benefits: "Un tratament extins pentru slăbire și remodelare, ce vizează coapsele, abdomenul și brațele/gambe. În 90 de minute, ajută la reducerea grăsimii și la tonifierea întregului corp, lăsând pielea mai fermă și un contur mai armonios.",
+        type: "SLABIRE SI REMODELARE - COAPSE, ABDOMEN, BRATE, GAMBE"
+    }
+    
+};
+
+
+
+
+      var productLink = document.querySelectorAll('.product-link')
+      productLink.forEach(element => {
+        element.addEventListener('click', ()=>{
+            
+            productLink.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+            var selectedCategory = element.getAttribute('data-category');
+            console.log(selectedCategory)
+            var data = productData[selectedCategory];
+            console.log(data)
+            document.querySelector('.new-price span').textContent = data.price;
+            document.querySelector('.product-rating span').textContent = data.rating;
+            document.querySelector('.product-detail p').textContent = data.benefits;
+            document.querySelector('.time').textContent = data.duration;
+            document.querySelector('#type').textContent = data.type;
+            // document.querySelector('.categorie').textContent = data.categorie;
+            // document.querySelector('.deplasari').textContent = data.deplasari;
+            // document.querySelector('.gene').textContent = data.gene;
+
+
+        })
+
+
+
+
+
+      });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+</html>
